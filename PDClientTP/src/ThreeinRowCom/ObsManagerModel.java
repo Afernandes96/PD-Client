@@ -312,8 +312,8 @@ public class ObsManagerModel extends Observable {
 //        return null;
 //    }
 //
-//    public String getUsername() {
-//        return username;
-//    }
+    public String getUsername() {
+        return username;
+    }
 }
 
