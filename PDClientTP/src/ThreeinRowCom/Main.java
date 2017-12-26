@@ -24,9 +24,9 @@ public class Main{
     /**
      *
      */
-    public boolean connectMngServer(String serverAddr){
+    public boolean connectManager(String serverAddr){
         try {
-            manager.connect(serverAddr);
+            manager.connectManager(serverAddr);
         } catch (IOException ex) {
             return false;
         }
@@ -39,7 +39,7 @@ public class Main{
      * @param serverAddr
      * @param port
      */
-    public void connectGameServer(String serverAddr, int port) {
+    public void connectGame(String serverAddr, int port) {
         try {
             InetAddress addr = InetAddress.getByName(serverAddr);
             game.connectGameServer(manager.getUsername(), addr, port);
