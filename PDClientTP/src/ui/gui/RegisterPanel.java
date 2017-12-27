@@ -100,7 +100,7 @@ public class RegisterPanel extends JPanel implements Observer{
             @Override
             public void actionPerformed(ActionEvent e) {
                 String passText = new String(passwordField.getPassword());
-                if (!model.mng().singUp(nameField.getText(),
+                if (!model.getManager().signUp(nameField.getText(),
                         usernameField.getText(), passText)) {
                     JOptionPane.showMessageDialog(
                             null, "Account already registered", "Information",

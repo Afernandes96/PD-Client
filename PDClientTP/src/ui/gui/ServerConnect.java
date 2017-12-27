@@ -14,7 +14,7 @@ public class ServerConnect extends JPanel implements Observer {
     ThreeInRowView frame;
     JLabel label;
     
-    JFormattedTextField ipText;
+    JTextField ipText;
     
     JButton confirm;
     
@@ -22,12 +22,13 @@ public class ServerConnect extends JPanel implements Observer {
         this.model=m;
         this.frame=frame;
         initComponents();
+        listeners();
         
     }
     private void initComponents(){
         label = new JLabel("IP do Servidor:");
         ipText = new JFormattedTextField();
-        ipText.setText("Ip no formato 0.0.0.0");
+        ipText.setText("0.0.0.0");
         confirm= new JButton("Confirmar");
   
         label.setLocation(40, 20);
@@ -54,7 +55,8 @@ public class ServerConnect extends JPanel implements Observer {
     protected void listeners() {
          confirm.addActionListener(new ActionListener() {
              @Override
-             public void actionPerformed(ActionEvent e) {                 
+             public void actionPerformed(ActionEvent e) {  
+             System.out.println(ipText.getText());
              if (!model.connectManager(ipText.getText())) {
                     JOptionPane.showMessageDialog(frame, "Erro ao conectar ao servidor", "Erro", JOptionPane.INFORMATION_MESSAGE);
                 }
