@@ -6,6 +6,7 @@ import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Observable;
 import java.util.Observer;
 import javax.swing.JFrame;
@@ -19,7 +20,7 @@ public class ThreeInRowView extends JFrame implements Observer
     MainM model;
     ObservableGame game;
     ThreeInRowGamePanel panel;
-    Login login;
+  //  Login login;
     
     JMenuBar menu;
     JMenu jogo;
@@ -82,12 +83,12 @@ public class ThreeInRowView extends JFrame implements Observer
     }
     
      protected void listeners() {
-         exit.addItemListener(new ActionListner(){
+         exit.addActionListener(new ActionListener() {
              @Override
-             public void actionPerformed(ActionEvent e){
-                 System.exit(0);
+             public void actionPerformed(ActionEvent e) {
+               System.exit(0);
              }
-         }
+         });
      }
 
     @Override
