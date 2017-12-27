@@ -6,12 +6,8 @@
 package Requests.ServerGameResponse;
 
 import java.io.Serializable;
-import threeinrow.logic.Player;
+import three_in_row.logic.Player;
 
-/**
- *
- * @author henri
- */
 public class GetPlayer2Response implements Serializable{
     private static final long serialVersionUID = 1L;
     private final Player player2;

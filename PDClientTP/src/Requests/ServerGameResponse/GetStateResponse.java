@@ -6,12 +6,8 @@
 package Requests.ServerGameResponse;
 
 import java.io.Serializable;
-import threeinrow.communication.EStates;
+import communication.EStates; // Falta import existir
 
-/**
- *
- * @author henri
- */
 public class GetStateResponse implements Serializable{
     private static final long serialVersionUID = 1L;
     private final EStates curState;

@@ -7,10 +7,6 @@ package Requests.ServerGameResponse;
 
 import java.io.Serializable;
 
-/**
- *
- * @author henri
- */
 public class GetGrelhaToStringResponse implements Serializable{
     private static final long serialVersionUID = 1L;
     private final String grelhaToString;

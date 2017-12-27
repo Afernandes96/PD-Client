@@ -6,12 +6,8 @@
 package Requests.ServerGameResponse;
 
 import java.io.Serializable;
-import threeinrow.logic.Token;
+import three_in_row.logic.Token;
 
-/**
- *
- * @author henri
- */
 public class GetTokenResponse implements Serializable{
     private static final long serialVersionUID = 1L;
     private final Token token;
