@@ -1,4 +1,4 @@
-package three_in_row.ui.gui;
+package ui.gui;
 
 import ThreeinRowCom.MainM;
 import three_in_row.logic.ObservableGame;
@@ -20,8 +20,8 @@ public class ThreeInRowView extends JFrame implements Observer
     MainM model;
     ObservableGame game;
     ThreeInRowGamePanel panel;
-  //  Login login;
-    
+    ServerConnect servermanager;
+//  Login login;
     JMenuBar menu;
     JMenu jogo;
     JMenu jogador;
@@ -36,8 +36,9 @@ public class ThreeInRowView extends JFrame implements Observer
         
         this.model=model;
          
-        game.addObserver(this);
-        panel=new ThreeInRowGamePanel(game);
+        
+     //   panel=new ThreeInRowGamePanel(game);
+        servermanager= new ServerConnect(model,this);
 
         addComponents();
         initComponents();
@@ -51,6 +52,8 @@ public class ThreeInRowView extends JFrame implements Observer
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         validate();
         model.getManager().addObserver(this);
+        
+
     }
   
     void initComponents(){
@@ -79,7 +82,8 @@ public class ThreeInRowView extends JFrame implements Observer
         Container cp=getContentPane();
         
         cp.setLayout(new BorderLayout());
-        cp.add(panel,BorderLayout.CENTER);
+        cp.add(servermanager,BorderLayout.CENTER);
+
     }
     
      protected void listeners() {
@@ -93,7 +97,10 @@ public class ThreeInRowView extends JFrame implements Observer
 
     @Override
     public void update(Observable o, Object arg) {
+        
+        servermanager.setVisible(true);
         repaint();
+        validate();
     }
     
    

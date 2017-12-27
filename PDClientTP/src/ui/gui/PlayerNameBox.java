@@ -1,5 +1,5 @@
 
-package three_in_row.ui.gui;
+package ui.gui;
 
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;

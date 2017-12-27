@@ -3,10 +3,26 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Nawie/Documents/GitHub/PD-Client/PDClientTP/src/Requests/PlaceTokenRequest.java</file>
-            <file>file:/C:/Users/Nawie/Documents/GitHub/PD-Client/PDClientTP/src/ThreeinRowCom/GameServerUtils.java</file>
-            <file>file:/C:/Users/Nawie/Documents/GitHub/PD-Client/PDClientTP/src/ThreeinRowCom/ObsGameModel.java</file>
-            <file>file:/C:/Users/Nawie/Documents/GitHub/PD-Client/PDClientTP/src/ThreeinRowCom/Main.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/MainWithTextUI.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/ui/gui/PlayerData.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/ui/gui/GameGrid.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/Requests/ReturnTokenRequest.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/ui/gui/ThreeInRowView.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/managerRequests/MessageRequest.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/ui/gui/Login.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/Requests/PlaceTokenRequest.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/ThreeinRowCom/ObsGameModel.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/managerRequests/SignUpRequest.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/ui/gui/GameCell.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/ui/gui/ThreeInRowGamePanel.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/ui/gui/Resources.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/ui/gui/StartOptionPanel.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/Requests/ServerGameResponse/GetStateResponse.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/managerRequests/MakeParingRequest.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/ui/gui/ServerConnect.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/MainWithGui.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/Requests/StartGameRequest.java</file>
+            <file>file:/D:/Utilizador/André/Documentos/NetBeansProjects/PD-Client/PDClientTP/src/ui/gui/PlayerNameBox.java</file>
         </group>
     </open-files>
 </project-private>

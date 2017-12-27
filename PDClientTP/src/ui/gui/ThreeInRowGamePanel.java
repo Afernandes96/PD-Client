@@ -1,4 +1,4 @@
-package three_in_row.ui.gui;
+package ui.gui;
 
 import three_in_row.logic.ObservableGame;
 import java.awt.BorderLayout;

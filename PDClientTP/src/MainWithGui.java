@@ -1,8 +1,5 @@
-package three_in_row;
-
 import ThreeinRowCom.MainM;
-import three_in_row.logic.ObservableGame;
-import three_in_row.ui.gui.ThreeInRowView;
+import ui.gui.ThreeInRowView;
 
 public class MainWithGui 
 {

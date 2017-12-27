@@ -1,5 +1,5 @@
 
-package three_in_row.ui.gui;
+package ui.gui;
 
 import three_in_row.logic.Player;
 import three_in_row.logic.ObservableGame;
