@@ -6,13 +6,13 @@ import java.net.UnknownHostException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Main{
+public class MainM{
     
     
     private ObsManagerModel manager;
     private ObsGameModel game;
 
-    public Main() {
+    public MainM() {
         manager = new ObsManagerModel(this);
         game = new ObsGameModel();
     }
@@ -46,9 +46,9 @@ public class Main{
             
             //throw new RuntimeException("This method should only be called to connect with the Game Server");
         } catch (UnknownHostException ex) {
-            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(MainM.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(MainM.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
