@@ -17,7 +17,7 @@ public class MakeParingRequest implements Serializable{
         return name;
     }
 
-    public String getFellowName() {
+    public String getUser() {
         return user;
     }
 }

@@ -22,7 +22,7 @@ public class MessageRequest implements Serializable{
         return message;
     }
 
-    public String getFellowName() {
+    public String getUser() {
         return user;
     }
 }
