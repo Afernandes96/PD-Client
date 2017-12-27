@@ -18,7 +18,7 @@ public class ObsManagerModel extends Observable {
 
     public static final int PORT = 5001;
     public static final int UPDATE_PORT = 5002;
-    private final Main parent;
+    private final MainM parent;
 
     private String username;
     private String address;
@@ -26,7 +26,7 @@ public class ObsManagerModel extends Observable {
     Thread updateSocketThread;
     private boolean isLoggedIn;
 
-    public ObsManagerModel(Main parent) {
+    public ObsManagerModel(MainM parent) {
         this.parent = parent;
 
     }
