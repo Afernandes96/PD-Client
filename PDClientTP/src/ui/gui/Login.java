@@ -12,6 +12,7 @@ import java.util.Observable;
 import java.util.Observer;
 import javax.swing.*;
 
+
 /**
  *
  * @author Nawie
@@ -26,8 +27,8 @@ public class Login extends JPanel implements Observer {
     JTextField userText;
     JTextField passText;
     JButton loginB;
-    JButton RegistoB;
-    Register registerDialog;
+    JButton registoB;
+    Register registoDialog;
     
     
     public Login(MainM model,ThreeInRowView frame){
@@ -48,6 +49,13 @@ public class Login extends JPanel implements Observer {
     }
 
     private void initComponents(){
+        
+        name = new JLabel("Username:");
+        userText = new JTextField();
+        pass = new JLabel("Password:");
+        passText = new JTextField();
+        loginB = new JButton("Login");
+        registoB = new JButton("Registo");
         name.setLocation(50, 40);
         name.setSize(200, 40);
  
@@ -63,15 +71,15 @@ public class Login extends JPanel implements Observer {
         loginB.setLocation(50, 250);
         loginB.setSize(200, 40);
         
-        RegistoB.setLocation(50, 300);
-        RegistoB.setSize(200, 40);
+        registoB.setLocation(50, 300);
+        registoB.setSize(200, 40);
         
         add(name);
         add(userText);
         add(pass);
         add(passText);
         add(loginB);
-        add(RegistoB);
+        add(registoB);
         
     }
     
@@ -84,12 +92,12 @@ public class Login extends JPanel implements Observer {
             }
         });
         
-        RegistoB.addActionListener(new ActionListener() {
+        registoB.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (!registerDialog.isVisible()) {
-                    registerDialog.setLocationRelativeTo(panel);
-                    registerDialog.setVisible(true);
+                if (!registoDialog.isVisible()) {
+                    registoDialog.setLocationRelativeTo(panel);
+                    registoDialog.setVisible(true);
                 }
             }
             
