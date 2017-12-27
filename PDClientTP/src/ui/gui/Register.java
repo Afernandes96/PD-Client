@@ -24,7 +24,7 @@ import javax.swing.JTextField;
  *
  * @author afrl1
  */
-public class RegisterPanel extends JPanel implements Observer{
+public class Register extends JOptionPane implements Observer{
     /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -42,9 +42,8 @@ public class RegisterPanel extends JPanel implements Observer{
 
     JButton registerButton;
 
-    public RegisterPanel(MainM model) {
+    public Register(MainM model) {
         this.model = model;
-        
         createComponents();
         setupComponents();
         addComponents();
@@ -99,18 +98,17 @@ public class RegisterPanel extends JPanel implements Observer{
         registerButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String passText = new String(passwordField.getPassword());
-                if (!model.getManager().signUp(nameField.getText(),
-                        usernameField.getText(), passText)) {
-                    JOptionPane.showMessageDialog(
-                            null, "Account already registered", "Information",
-                            JOptionPane.INFORMATION_MESSAGE);
-                } else {
-                    JOptionPane.showMessageDialog(
-                            null, "Successful Registration", "Information",
-                            JOptionPane.INFORMATION_MESSAGE);
-                    setVisible(false);
-                }
+//                String passText = new String(passwordField.getPassword());
+//                if (!model.getManager().signUp(nameField.getText(), usernameField.getText(), passText)) {
+//                    JOptionPane.showMessageDialog(
+//                            null, "Account already registered", "Information",
+//                            JOptionPane.INFORMATION_MESSAGE);
+//                } else {
+//                    JOptionPane.showMessageDialog(
+//                            null, "Successful Registration", "Information",
+//                            JOptionPane.INFORMATION_MESSAGE);
+//                    setVisible(false);
+//                }
 
             }
         });
