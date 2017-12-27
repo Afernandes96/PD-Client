@@ -98,8 +98,9 @@ public class ThreeInRowView extends JFrame implements Observer
 
     @Override
     public void update(Observable o, Object arg) {
-        login.setVisible(true);
-        servermanager.setVisible(false);
+        servermanager.setVisible(true);
+        login.setVisible(false);
+       
         repaint();
         validate();
     }

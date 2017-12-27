@@ -31,7 +31,7 @@ public class ObsManagerModel extends Observable {
 
     }
 
-    public void connectManager(String address) throws UnknownHostException, IOException {
+    public void connectManager(String address) throws UnknownHostException, IOException, InterruptedException {
         this.isLoggedIn = false;
         this.address = address;
         this.username = null;

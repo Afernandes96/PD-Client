@@ -24,7 +24,7 @@ public class MainM{
     /**
      *
      */
-    public boolean connectManager(String serverAddr){
+    public boolean connectManager(String serverAddr) throws UnknownHostException, InterruptedException{
         try {
             manager.connectManager(serverAddr);
         } catch (IOException ex) {

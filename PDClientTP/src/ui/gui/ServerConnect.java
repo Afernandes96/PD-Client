@@ -4,8 +4,11 @@ package ui.gui;
 import ThreeinRowCom.MainM;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.net.UnknownHostException;
 import java.util.Observable;
 import java.util.Observer;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.*;
 
 public class ServerConnect extends JPanel implements Observer {
@@ -28,7 +31,7 @@ public class ServerConnect extends JPanel implements Observer {
     private void initComponents(){
         label = new JLabel("IP do Servidor:");
         ipText = new JFormattedTextField();
-        ipText.setText("0.0.0.0");
+        ipText.setText("127.0.0.1");
         confirm= new JButton("Confirmar");
   
         label.setLocation(40, 20);
@@ -57,9 +60,14 @@ public class ServerConnect extends JPanel implements Observer {
              @Override
              public void actionPerformed(ActionEvent e) {  
              System.out.println(ipText.getText());
-             if (!model.connectManager(ipText.getText())) {
-                    JOptionPane.showMessageDialog(frame, "Erro ao conectar ao servidor", "Erro", JOptionPane.INFORMATION_MESSAGE);
-                }
+                 try {
+                     if (!model.connectManager(ipText.getText())) {
+                         JOptionPane.showMessageDialog(frame, "Erro ao conectar ao servidor", "Erro", JOptionPane.INFORMATION_MESSAGE);
+                     }} catch (UnknownHostException ex) {
+                     Logger.getLogger(ServerConnect.class.getName()).log(Level.SEVERE, null, ex);
+                 } catch (InterruptedException ex) {
+                     Logger.getLogger(ServerConnect.class.getName()).log(Level.SEVERE, null, ex);
+                 }
 
              }
          });

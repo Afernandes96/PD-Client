@@ -42,8 +42,8 @@ public class Login extends JPanel implements Observer {
         setLocation(0, 0);
         setSize(1430, 865);
         
-//                registerDialog = new RegisterDialog(model);
-//        registerDialog.setLocationRelativeTo(frame);
+        registoDialog = new Register(model);
+        registoDialog.setLocationRelativeTo(frame);
            
         model.getManager().addObserver(this);
     }

@@ -6,17 +6,17 @@
 package Requests.ServerGameResponse;
 
 import java.io.Serializable;
-import communication.EStates; // Falta import existir
+//import communication.EStates; // Falta import existir
 
 public class GetStateResponse implements Serializable{
-    private static final long serialVersionUID = 1L;
-    private final EStates curState;
-
-    public GetStateResponse(EStates curState) {
-        this.curState = curState;
-    }
-
-    public EStates getCurState() {
-        return curState;
-    }
+//    private static final long serialVersionUID = 1L;
+//    private final EStates curState;
+//
+//    public GetStateResponse(EStates curState) {
+//        this.curState = curState;
+//    }
+//
+//    public EStates getCurState() {
+//        return curState;
+//    }
 }
