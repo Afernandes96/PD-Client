@@ -24,16 +24,20 @@ import java.net.Socket;
 class ManagerServer extends Thread
 {
     public static final int SERVICE_PORT=5001;
-    
+    public static final int SERVICE_PORT1=5002;
     public static void main(String[] args) {
         try{
             ServerSocket server=new ServerSocket(SERVICE_PORT);
+            ServerSocket server1=new ServerSocket(SERVICE_PORT1);
             System.out.println("Servidor aberto!");
             
             while(true){
                 Socket nextClient=server.accept();
+                System.out.println("1");
                 System.out.println("Received request from " + nextClient.getInetAddress() + ":" + nextClient.getPort());
-                
+                Socket nextClient1=server.accept();
+                System.out.println("2");
+                System.out.println("Received request from " + nextClient1.getInetAddress() + ":" + nextClient.getPort());
                 nextClient.close();
                 //System.out.println("Not able to do client request");
             }

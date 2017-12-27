@@ -4,6 +4,7 @@ package ThreeinRowCom;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import static java.lang.Thread.sleep;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
@@ -24,8 +25,8 @@ public class ManagerServerUtils {
         this.connected = false;
     }
 
-    public void connect() throws IOException {
-
+    public void connect() throws IOException, InterruptedException {
+        
         socket = new Socket(serverAddr,SERVER_PORT);
         socket.setSoTimeout(TIMEOUT * 1000);
         out = new ObjectOutputStream(socket.getOutputStream());

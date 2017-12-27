@@ -21,7 +21,7 @@ public class ThreeInRowView extends JFrame implements Observer
     ObservableGame game;
     ThreeInRowGamePanel panel;
     ServerConnect servermanager;
-//  Login login;
+    Login login;
     JMenuBar menu;
     JMenu jogo;
     JMenu jogador;
@@ -39,7 +39,7 @@ public class ThreeInRowView extends JFrame implements Observer
         
      //   panel=new ThreeInRowGamePanel(game);
         servermanager= new ServerConnect(model,this);
-
+        login = new Login(model, this);
         addComponents();
         initComponents();
         listeners();
@@ -83,6 +83,7 @@ public class ThreeInRowView extends JFrame implements Observer
         
         cp.setLayout(new BorderLayout());
         cp.add(servermanager,BorderLayout.CENTER);
+        cp.add(login,BorderLayout.CENTER);
 
     }
     
@@ -97,8 +98,8 @@ public class ThreeInRowView extends JFrame implements Observer
 
     @Override
     public void update(Observable o, Object arg) {
-        
-        servermanager.setVisible(true);
+        login.setVisible(true);
+        servermanager.setVisible(false);
         repaint();
         validate();
     }
